@@ -12,6 +12,8 @@
 
 <P>  The time on the server is ${serverTime}. </P>
 
-테스트 커밋 2번쨰!!!
+<p><a href="/board/list">게시물 목록</a></p>
+<p><a href="/board/write">게시물 작성</a></p>
+
 </body>
 </html>
