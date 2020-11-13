@@ -8,6 +8,10 @@
 </head>
 <body>
 
+<div id="nav">
+	<%@ include file="../include/nav.jsp" %>
+</div>
+
 <table border="1"> 
 	<thead>
 		<tr>
@@ -23,7 +27,9 @@
 		<c:forEach var="list" items="${list}">			
 			<tr>
 				<td>${list.bno}</td>
-				<td>${list.title}</td>
+				<td>
+					<a href="/board/view?bno=${list.bno}">${list.title}</a>
+				</td>
 				<td>${list.regDate}</td>
 				<td>${list.writer}</td>
 				<td>${list.viewCnt}</td>
